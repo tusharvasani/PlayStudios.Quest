@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "PSQuest.Core/1.0.0": {
+        "dependencies": {
+          "PSQuest.Data": "1.0.0"
+        },
+        "runtime": {
+          "PSQuest.Core.dll": {}
+        }
+      },
+      "PSQuest.Data/1.0.0": {
+        "runtime": {
+          "PSQuest.Data.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PSQuest.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PSQuest.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

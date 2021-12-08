@@ -1,0 +1,15 @@
+E:\My Projects\PlayStudios\PlayStudios.Quest\PSQuest.Core\bin\Debug\net5.0\PSQuest.Core.deps.json
+E:\My Projects\PlayStudios\PlayStudios.Quest\PSQuest.Core\bin\Debug\net5.0\PSQuest.Core.dll
+E:\My Projects\PlayStudios\PlayStudios.Quest\PSQuest.Core\bin\Debug\net5.0\ref\PSQuest.Core.dll
+E:\My Projects\PlayStudios\PlayStudios.Quest\PSQuest.Core\bin\Debug\net5.0\PSQuest.Core.pdb
+E:\My Projects\PlayStudios\PlayStudios.Quest\PSQuest.Core\obj\Debug\net5.0\PSQuest.Core.csproj.AssemblyReference.cache
+E:\My Projects\PlayStudios\PlayStudios.Quest\PSQuest.Core\obj\Debug\net5.0\PSQuest.Core.GeneratedMSBuildEditorConfig.editorconfig
+E:\My Projects\PlayStudios\PlayStudios.Quest\PSQuest.Core\obj\Debug\net5.0\PSQuest.Core.AssemblyInfoInputs.cache
+E:\My Projects\PlayStudios\PlayStudios.Quest\PSQuest.Core\obj\Debug\net5.0\PSQuest.Core.AssemblyInfo.cs
+E:\My Projects\PlayStudios\PlayStudios.Quest\PSQuest.Core\obj\Debug\net5.0\PSQuest.Core.csproj.CoreCompileInputs.cache
+E:\My Projects\PlayStudios\PlayStudios.Quest\PSQuest.Core\obj\Debug\net5.0\PSQuest.Core.dll
+E:\My Projects\PlayStudios\PlayStudios.Quest\PSQuest.Core\obj\Debug\net5.0\ref\PSQuest.Core.dll
+E:\My Projects\PlayStudios\PlayStudios.Quest\PSQuest.Core\obj\Debug\net5.0\PSQuest.Core.pdb
+E:\My Projects\PlayStudios\PlayStudios.Quest\PSQuest.Core\bin\Debug\net5.0\PSQuest.Data.dll
+E:\My Projects\PlayStudios\PlayStudios.Quest\PSQuest.Core\bin\Debug\net5.0\PSQuest.Data.pdb
+E:\My Projects\PlayStudios\PlayStudios.Quest\PSQuest.Core\obj\Debug\net5.0\PSQuest.Core.csproj.CopyComplete
