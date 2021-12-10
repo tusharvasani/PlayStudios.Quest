@@ -1,3 +1,101 @@
-{
-    
-}
+[
+  {
+    "questId": "Q0001",
+    "questName": "Winter Games",
+    "minChipAmountBet": 1000,
+    "totalMilestones": 5,
+    "requiredPoints": 5000,
+    "rateFromBet": 1,
+    "levelBonusRate" : 100,
+    "isActive": false,
+    "milestones": [
+      {
+        "milestoneIndex": 1,
+        "pointsToCompleteMilestone": 1000,
+        "chipsAwarded": 200
+      },
+      {
+        "milestoneIndex": 2,
+        "pointsToCompleteMilestone": 1000,
+        "chipsAwarded": 300
+      },
+      {
+        "milestoneIndex": 3,
+        "pointsToCompleteMilestone": 1000,
+        "chipsAwarded": 400
+      },
+      {
+        "milestoneIndex": 4,
+        "pointsToCompleteMilestone": 1000,
+        "chipsAwarded": 500
+      },
+      {
+        "milestoneIndex": 5,
+        "pointsToCompleteMilestone": 1000,
+        "chipsAwarded": 600
+      }
+    ]
+  },
+  {
+    "questId": "Q0002",
+    "questName": "Christmas Fiesta",
+    "minChipAmountBet": 500,
+    "totalMilestones": 10,
+    "requiredPoints": 27500,
+    "rateFromBet": 2,
+    "levelBonusRate": 5,
+    "isActive": true,
+    "milestones": [
+      {
+        "milestoneIndex": 1,
+        "pointsToCompleteMilestone": 500,
+        "chipsAwarded": 100
+      },
+      {
+        "milestoneIndex": 2,
+        "pointsToCompleteMilestone": 1000,
+        "chipsAwarded": 200
+      },
+      {
+        "milestoneIndex": 3,
+        "pointsToCompleteMilestone": 1500,
+        "chipsAwarded": 300
+      },
+      {
+        "milestoneIndex": 4,
+        "pointsToCompleteMilestone": 2000,
+        "chipsAwarded": 400
+      },
+      {
+        "milestoneIndex": 5,
+        "pointsToCompleteMilestone": 2500,
+        "chipsAwarded": 500
+      },
+      {
+        "milestoneIndex": 6,
+        "pointsToCompleteMilestone": 3000,
+        "chipsAwarded": 600
+      },
+      {
+        "milestoneIndex": 7,
+        "pointsToCompleteMilestone": 3500,
+        "chipsAwarded": 700
+      },
+      {
+        "milestoneIndex": 8,
+        "pointsToCompleteMilestone": 4000,
+        "chipsAwarded": 800
+      },
+      {
+        "milestoneIndex": 9,
+        "pointsToCompleteMilestone": 4500,
+        "chipsAwarded": 900
+      },
+      {
+        "milestoneIndex": 10,
+        "pointsToCompleteMilestone": 5000,
+        "chipsAwarded": 1000
+      }
+    ]
+  }
+]

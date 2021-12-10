@@ -8,7 +8,7 @@ namespace PSQuest.Data.Transfer
 {
     public class QuestStateResponse
     {
-        public int TotalQuestPercentCompleted { get; set; }
+        public decimal TotalQuestPercentCompleted { get; set; }
         public int LastMilestoneIndexCompleted { get; set; }
     }
 }

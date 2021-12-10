@@ -9,8 +9,8 @@ namespace PSQuest.Data.Transfer
     public class QuestProgressResponse
     {
         public int QuestPointsEarned { get; set; }
-        public int TotalQquestPercentCompleted { get; set; }
-        public Milestone MilestoneCompleted { get; set; }
+        public decimal TotalQuestPercentCompleted { get; set; }
+        public List<Milestone> MilestonesCompleted { get; set; }
     }
 
     public class Milestone

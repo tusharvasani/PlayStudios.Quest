@@ -1,17 +1,19 @@
+using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Http;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using PSQuest.API.Filters;
+using PSQuest.Core.Common;
 using PSQuest.Core.Services;
+using PSQuest.Data;
+using PSQuest.Data.Models;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace PSQuest.API
 {
@@ -27,16 +29,41 @@ namespace PSQuest.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.Configure<AppSettings>(Configuration.GetSection("AppSettings"));
+            var configAppSettings = Configuration.GetSection("AppSettings").Get<AppSettings>();
+
+            services.AddSingleton(Configuration);
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "PSQuest.API", Version = "v1" });
             });
-            
-            services.AddScoped<IQuestProgressRepository, QuestProgressRepository>();
-            services.AddScoped<IQuestStateRepository, QuestStateRepository>();
 
-            //services.AddDbContext()
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
+            // Registering the API Services
+            services.
+                AddScoped<IQuestService>(config => new QuestService(configAppSettings.QuestConfigFilePath));
+            services.
+                AddScoped<IQuestProgressService, QuestProgressService>();
+            services.
+                AddScoped<IQuestStateService, QuestStateService>();
+
+            services
+                .AddMvc(options =>
+                {
+                    options.EnableEndpointRouting = false;
+                    options.Filters.Add<ValidationFilter>();
+                })
+                .SetCompatibilityVersion(Microsoft.AspNetCore.Mvc.CompatibilityVersion.Version_3_0)
+                .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<Startup>());
+
+
+            services.AddDbContext<QuestDbContext>(options =>
+            {
+                options.UseSqlServer(configAppSettings.SqlConnectionString);
+            });
+            General.QuestConfigFilePath = configAppSettings.QuestConfigFilePath;
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -50,6 +77,14 @@ namespace PSQuest.API
             }
 
             app.UseHttpsRedirection();
+
+            app.UseExceptionHandler(a => a.Run(async context =>
+            {
+                var exceptionHandlerPathFeature = context.Features.Get<IExceptionHandlerPathFeature>();
+                var exception = exceptionHandlerPathFeature.Error;
+
+                await context.Response.WriteAsJsonAsync(new { error = exception.Message });
+            }));
 
             app.UseRouting();
 

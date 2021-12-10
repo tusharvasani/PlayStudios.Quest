@@ -1,25 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "E:\\My Projects\\PlayStudios\\PlayStudios.Quest\\PSQuest.Data\\PSQuest.Data.csproj": {}
+    "E:\\F-Tushar\\My Projects\\Practice\\PlayStudios.Quest\\PSQuest.Data\\PSQuest.Data.csproj": {}
   },
   "projects": {
-    "E:\\My Projects\\PlayStudios\\PlayStudios.Quest\\PSQuest.Data\\PSQuest.Data.csproj": {
+    "E:\\F-Tushar\\My Projects\\Practice\\PlayStudios.Quest\\PSQuest.Data\\PSQuest.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\My Projects\\PlayStudios\\PlayStudios.Quest\\PSQuest.Data\\PSQuest.Data.csproj",
+        "projectUniqueName": "E:\\F-Tushar\\My Projects\\Practice\\PlayStudios.Quest\\PSQuest.Data\\PSQuest.Data.csproj",
         "projectName": "PSQuest.Data",
-        "projectPath": "E:\\My Projects\\PlayStudios\\PlayStudios.Quest\\PSQuest.Data\\PSQuest.Data.csproj",
-        "packagesPath": "C:\\Users\\Tushar\\.nuget\\packages\\",
-        "outputPath": "E:\\My Projects\\PlayStudios\\PlayStudios.Quest\\PSQuest.Data\\obj\\",
+        "projectPath": "E:\\F-Tushar\\My Projects\\Practice\\PlayStudios.Quest\\PSQuest.Data\\PSQuest.Data.csproj",
+        "packagesPath": "C:\\Users\\TUSHAR\\.nuget\\packages\\",
+        "outputPath": "E:\\F-Tushar\\My Projects\\Practice\\PlayStudios.Quest\\PSQuest.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Tushar\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\TUSHAR\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -44,6 +42,22 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.12, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -59,7 +73,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.209\\RuntimeIdentifierGraph.json"
         }
       }
     }

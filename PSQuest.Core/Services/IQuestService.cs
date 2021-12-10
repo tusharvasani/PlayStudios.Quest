@@ -1,5 +1,4 @@
 ﻿using PSQuest.Data.Models;
-using PSQuest.Data.Transfer;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,8 +7,10 @@ using System.Threading.Tasks;
 
 namespace PSQuest.Core.Services
 {
-    public interface IQuestProgressRepository
+    public interface IQuestService 
     {
-        Task<QuestProgressResponse> ComputeQuestProgress(QuestProgressRequest request); 
+        Task<List<QuestConfig>> LoadQuestConfigurations();
+        QuestConfig GetActiveQuestInfo();
+
     }
 }
