@@ -22,8 +22,8 @@ namespace PSQuest.Core.Services
         {
             if (string.IsNullOrEmpty(questId))
             {
-                QuestService questService = new QuestService(General.QuestConfigFilePath);
-                questId = questService.GetActiveQuestInfo().QuestId;
+                QuestConfigService questService = new QuestConfigService(General.QuestConfigFilePath);
+                questId = questService.LoadAndGetActiveQuestConfig().QuestId;
             }
             return Task.FromResult(_context.PlayerQuestState.Where(state => state.PlayerId == playerId && state.QuestId == questId).FirstOrDefault());
         }

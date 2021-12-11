@@ -43,12 +43,10 @@ namespace PSQuest.API
 
             // Registering the API Services
             services.
-                AddScoped<IQuestService>(config => new QuestService(configAppSettings.QuestConfigFilePath));
+                AddScoped<IQuestConfigService>(config => new QuestConfigService(configAppSettings.QuestConfigFilePath));
             services.
-                AddScoped<IQuestProgressService, QuestProgressService>();
-            services.
-                AddScoped<IQuestStateService, QuestStateService>();
-
+                AddScoped<IQuestService, QuestService>();
+            
             services
                 .AddMvc(options =>
                 {

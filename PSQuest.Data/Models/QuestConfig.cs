@@ -22,13 +22,7 @@ namespace PSQuest.Data.Models
             get { return questName; }
             set { questName = value; }
         }
-        private int minChipAmountBet;
-
-        public int MinChipAmountBet
-        {
-            get { return minChipAmountBet; }
-            set { minChipAmountBet = value; }
-        }
+        
         private int totalMilestones;
         public int TotalMilestones
         {

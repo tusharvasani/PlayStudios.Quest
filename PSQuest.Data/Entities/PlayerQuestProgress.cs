@@ -16,6 +16,7 @@ namespace PSQuest.Data.Entities
         public string QuestId { get; set; }
         public int PlayerLevel { get; set; }
         public int ChipAmountBet { get; set; }
+        public int QuestPointsEarned { get; set; }
         public DateTime InsertDateTime { get; set; }
 
     }

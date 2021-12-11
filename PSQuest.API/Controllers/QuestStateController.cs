@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace PSQuest.API.Controllers
 {
-    [Route("api/state")]
+    [Route("api/")]
     [ApiController]
     public class QuestStateController : ControllerBase
     {

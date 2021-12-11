@@ -10,9 +10,9 @@ using System.Threading.Tasks;
 
 namespace PSQuest.Core.Profiles
 {
-    public class QuestStateProfile : Profile
+    public class QuestProfile : Profile
     {
-        public QuestStateProfile()
+        public QuestProfile()
         {
             CreateMap<PlayerQuestState, QuestStateResponse>();
         }

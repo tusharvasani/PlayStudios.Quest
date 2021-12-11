@@ -2,8 +2,6 @@
 using Microsoft.AspNetCore.Mvc.Filters;
 using PSQuest.Data.Models;
 using PSQuest.Data.Transfer;
-using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 

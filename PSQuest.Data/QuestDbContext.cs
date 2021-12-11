@@ -18,7 +18,7 @@ namespace PSQuest.Data
         {
             builder.Entity<PlayerQuestState>().HasKey(t => new { t.PlayerId, t.QuestId });
         }
-        public DbSet<Player> Player { get; set; }
+        //public DbSet<Player> Player { get; set; }
         public DbSet<PlayerQuestProgress> PlayerQuestProgress { get; set; }
         public DbSet<PlayerQuestState> PlayerQuestState { get; set; }
 
