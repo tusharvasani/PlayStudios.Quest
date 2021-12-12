@@ -11,6 +11,8 @@ E:\My Projects\PlayStudios\PlayStudios.Quest\PSQuest.Data\obj\Debug\net5.0\PSQue
 E:\My Projects\PlayStudios\PlayStudios.Quest\PSQuest.Data\obj\Debug\net5.0\ref\PSQuest.Data.dll
 E:\My Projects\PlayStudios\PlayStudios.Quest\PSQuest.Data\obj\Debug\net5.0\PSQuest.Data.pdb
 E:\F-Tushar\My Projects\Practice\PlayStudios.Quest\PSQuest.Data\bin\Debug\net5.0\PSQuest.Data.deps.json
+E:\F-Tushar\My Projects\Practice\PlayStudios.Quest\PSQuest.Data\bin\Debug\net5.0\PSQuest.Data.runtimeconfig.json
+E:\F-Tushar\My Projects\Practice\PlayStudios.Quest\PSQuest.Data\bin\Debug\net5.0\PSQuest.Data.runtimeconfig.dev.json
 E:\F-Tushar\My Projects\Practice\PlayStudios.Quest\PSQuest.Data\bin\Debug\net5.0\PSQuest.Data.dll
 E:\F-Tushar\My Projects\Practice\PlayStudios.Quest\PSQuest.Data\bin\Debug\net5.0\ref\PSQuest.Data.dll
 E:\F-Tushar\My Projects\Practice\PlayStudios.Quest\PSQuest.Data\bin\Debug\net5.0\PSQuest.Data.pdb
@@ -22,6 +24,4 @@ E:\F-Tushar\My Projects\Practice\PlayStudios.Quest\PSQuest.Data\obj\Debug\net5.0
 E:\F-Tushar\My Projects\Practice\PlayStudios.Quest\PSQuest.Data\obj\Debug\net5.0\PSQuest.Data.dll
 E:\F-Tushar\My Projects\Practice\PlayStudios.Quest\PSQuest.Data\obj\Debug\net5.0\ref\PSQuest.Data.dll
 E:\F-Tushar\My Projects\Practice\PlayStudios.Quest\PSQuest.Data\obj\Debug\net5.0\PSQuest.Data.pdb
-E:\F-Tushar\My Projects\Practice\PlayStudios.Quest\PSQuest.Data\bin\Debug\net5.0\PSQuest.Data.runtimeconfig.json
-E:\F-Tushar\My Projects\Practice\PlayStudios.Quest\PSQuest.Data\bin\Debug\net5.0\PSQuest.Data.runtimeconfig.dev.json
 E:\F-Tushar\My Projects\Practice\PlayStudios.Quest\PSQuest.Data\obj\Debug\net5.0\PSQuest.Data.genruntimeconfig.cache
